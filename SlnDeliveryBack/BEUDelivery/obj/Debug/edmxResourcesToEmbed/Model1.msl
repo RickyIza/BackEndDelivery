@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_A66901_DeliveryModelStoreContainer" CdmEntityContainer="DeliveryEntities">
+    <EntitySetMapping Name="DetallePedido">
+      <EntityTypeMapping TypeName="DB_A66901_DeliveryModel.DetallePedido">
+        <MappingFragment StoreEntitySet="DetallePedido">
+          <ScalarProperty Name="idDetPedido" ColumnName="idDetPedido" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="recargaentrega" ColumnName="recargaentrega" />
+          <ScalarProperty Name="iva" ColumnName="iva" />
+          <ScalarProperty Name="idPedido" ColumnName="idPedido" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pedido">
+      <EntityTypeMapping TypeName="DB_A66901_DeliveryModel.Pedido">
+        <MappingFragment StoreEntitySet="Pedido">
+          <ScalarProperty Name="idPedido" ColumnName="idPedido" />
+          <ScalarProperty Name="fechapedido" ColumnName="fechapedido" />
+          <ScalarProperty Name="estadopedido" ColumnName="estadopedido" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="DB_A66901_DeliveryModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fechaelaboracion" ColumnName="fechaelaboracion" />
+          <ScalarProperty Name="fechavencimiento" ColumnName="fechavencimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="DB_A66901_DeliveryModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="cedula" ColumnName="cedula" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+          <ScalarProperty Name="usuariosesion" ColumnName="usuariosesion" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="rptAgrupadosPedidosClientesMes" FunctionName="DB_A66901_DeliveryModel.Store.rptAgrupadosPedidosClientesMes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DB_A66901_DeliveryModel.rptAgrupadosPedidosClientesMes_Result">
+          <ScalarProperty Name="MES" ColumnName="MES" />
+          <ScalarProperty Name="Pedidos" ColumnName="Pedidos" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rptNumeroPedidos" FunctionName="DB_A66901_DeliveryModel.Store.rptNumeroPedidos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DB_A66901_DeliveryModel.rptNumeroPedidos_Result">
+          <ScalarProperty Name="Pedidos" ColumnName="Pedidos" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rptProductosVendidos" FunctionName="DB_A66901_DeliveryModel.Store.rptProductosVendidos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DB_A66901_DeliveryModel.rptProductosVendidos_Result">
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rptProductosVendidosMes" FunctionName="DB_A66901_DeliveryModel.Store.rptProductosVendidosMes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DB_A66901_DeliveryModel.rptProductosVendidosMes_Result">
+          <ScalarProperty Name="MES" ColumnName="MES" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

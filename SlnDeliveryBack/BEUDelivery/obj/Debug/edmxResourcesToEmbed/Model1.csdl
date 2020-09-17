@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_A66901_DeliveryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DetallePedido">
+    <Key>
+      <PropertyRef Name="idDetPedido" />
+    </Key>
+    <Property Name="idDetPedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cantidad" Type="Int32" />
+    <Property Name="subtotal" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="recargaentrega" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="iva" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="idPedido" Type="Int32" />
+    <Property Name="idProducto" Type="Int32" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK_DetallePedido_Pedido" FromRole="DetallePedido" ToRole="Pedido" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK_DetallePedido_Producto" FromRole="DetallePedido" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Pedido">
+    <Key>
+      <PropertyRef Name="idPedido" />
+    </Key>
+    <Property Name="idPedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fechapedido" Type="DateTime" Precision="3" />
+    <Property Name="estadopedido" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="idUsuario" Type="Int32" />
+    <Property Name="total" Type="Decimal" Precision="8" Scale="4" />
+    <NavigationProperty Name="DetallePedido" Relationship="Self.FK_DetallePedido_Pedido" FromRole="Pedido" ToRole="DetallePedido" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Pedido_Usuario" FromRole="Pedido" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="idProducto" />
+    </Key>
+    <Property Name="idProducto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="comentario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="fechaelaboracion" Type="DateTime" Precision="0" />
+    <Property Name="fechavencimiento" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="DetallePedido" Relationship="Self.FK_DetallePedido_Producto" FromRole="Producto" ToRole="DetallePedido" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cedula" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="contrasena" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="usuariosesion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="rol" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK_Pedido_Usuario" FromRole="Usuario" ToRole="Pedido" />
+  </EntityType>
+  <Association Name="FK_DetallePedido_Pedido">
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="0..1" />
+    <End Role="DetallePedido" Type="Self.DetallePedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="idPedido" />
+      </Principal>
+      <Dependent Role="DetallePedido">
+        <PropertyRef Name="idPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetallePedido_Producto">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="DetallePedido" Type="Self.DetallePedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="idProducto" />
+      </Principal>
+      <Dependent Role="DetallePedido">
+        <PropertyRef Name="idProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pedido_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DeliveryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DetallePedido" EntityType="Self.DetallePedido" />
+    <EntitySet Name="Pedido" EntityType="Self.Pedido" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK_DetallePedido_Pedido" Association="Self.FK_DetallePedido_Pedido">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="DetallePedido" EntitySet="DetallePedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetallePedido_Producto" Association="Self.FK_DetallePedido_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="DetallePedido" EntitySet="DetallePedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pedido_Usuario" Association="Self.FK_Pedido_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <FunctionImport Name="rptAgrupadosPedidosClientesMes" ReturnType="Collection(DB_A66901_DeliveryModel.rptAgrupadosPedidosClientesMes_Result)" />
+    <FunctionImport Name="rptNumeroPedidos" ReturnType="Collection(DB_A66901_DeliveryModel.rptNumeroPedidos_Result)" />
+    <FunctionImport Name="rptProductosVendidos" ReturnType="Collection(DB_A66901_DeliveryModel.rptProductosVendidos_Result)" />
+    <FunctionImport Name="rptProductosVendidosMes" ReturnType="Collection(DB_A66901_DeliveryModel.rptProductosVendidosMes_Result)" />
+  </EntityContainer>
+  <ComplexType Name="rptAgrupadosPedidosClientesMes_Result">
+    <Property Type="Int32" Name="MES" Nullable="true" />
+    <Property Type="Int32" Name="Pedidos" Nullable="true" />
+    <Property Type="String" Name="Cliente" Nullable="false" MaxLength="101" />
+  </ComplexType>
+  <ComplexType Name="rptNumeroPedidos_Result">
+    <Property Type="Int32" Name="Pedidos" Nullable="true" />
+    <Property Type="String" Name="Cliente" Nullable="false" MaxLength="101" />
+  </ComplexType>
+  <ComplexType Name="rptProductosVendidos_Result">
+    <Property Type="Int32" Name="Cantidad" Nullable="true" />
+    <Property Type="String" Name="Producto" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="rptProductosVendidosMes_Result">
+    <Property Type="Int32" Name="MES" Nullable="true" />
+    <Property Type="Int32" Name="Cantidad" Nullable="true" />
+    <Property Type="String" Name="Producto" Nullable="true" MaxLength="50" />
+  </ComplexType>
+</Schema>

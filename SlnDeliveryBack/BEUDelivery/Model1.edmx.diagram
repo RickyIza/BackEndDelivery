@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9aa5972c03944d759145a7c591eb8b85" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_A66901_DeliveryModel.DetallePedido" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_A66901_DeliveryModel.Pedido" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_A66901_DeliveryModel.Producto" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_A66901_DeliveryModel.Usuario" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="DB_A66901_DeliveryModel.FK_DetallePedido_Pedido" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_A66901_DeliveryModel.FK_DetallePedido_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_A66901_DeliveryModel.FK_Pedido_Usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

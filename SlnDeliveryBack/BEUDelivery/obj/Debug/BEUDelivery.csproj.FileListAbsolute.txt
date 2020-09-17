@@ -1,0 +1,41 @@
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\bin\Debug\BEUDelivery.dll.config
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\bin\Debug\BEUDelivery.dll
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\bin\Debug\BEUDelivery.pdb
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.dll
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\bin\Debug\Newtonsoft.Json.dll
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.xml
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\bin\Debug\Newtonsoft.Json.xml
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.csproj.CoreCompileInputs.cache
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.csproj.CopyComplete
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.dll
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.pdb
+C:\Users\crist\OneDrive\Escritorio\RepasoCRUD\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.csprojAssemblyReference.cache
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\bin\Debug\BEUDelivery.dll.config
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\bin\Debug\BEUDelivery.dll
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\bin\Debug\BEUDelivery.pdb
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.dll
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\bin\Debug\Newtonsoft.Json.dll
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.xml
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\bin\Debug\Newtonsoft.Json.xml
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.csproj.CoreCompileInputs.cache
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.csproj.CopyComplete
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.dll
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.pdb
+C:\Users\crist\OneDrive\Documentos\GitHub\BackEndDelivery\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.csprojAssemblyReference.cache
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\bin\Debug\BEUDelivery.dll.config
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\bin\Debug\BEUDelivery.dll
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\bin\Debug\BEUDelivery.pdb
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.dll
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.xml
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.csproj.CoreCompileInputs.cache
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.csproj.CopyComplete
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.dll
+C:\Users\rckik\Downloads\DELIVERY FINAL\BackEndDelivery-master\SlnDeliveryBack\BEUDelivery\obj\Debug\BEUDelivery.pdb
